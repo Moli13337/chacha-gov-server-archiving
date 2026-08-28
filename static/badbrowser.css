@@ -1,0 +1,117 @@
+.browser-blocker-wrapper {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: content-box !important;
+  z-index: 99999;
+}
+.browser-blocker-wrapper .modal {
+  background: #fff;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  margin-left: -400px;
+  margin-top: -200px;
+  color: #434a54;
+  z-index: 99999;
+  text-align: center;
+}
+.browser-blocker-wrapper .modal .header {
+  height: 100px;
+  padding-top: 10px;
+  clear: both;
+}
+.browser-blocker-wrapper .modal .header .title {
+  font-size: 36px;
+  line-height: 42px;
+  margin: 0 0 15px 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  color: #444;
+  text-transform: none;
+}
+.browser-blocker-wrapper .modal .header .message {
+  margin-top: 15px;
+}
+.browser-blocker-wrapper .browsers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  clear: both;
+  min-height: 200px;
+}
+.browser-blocker-wrapper .browsers a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  background: none;
+  outline: none;
+}
+.browser-blocker-wrapper .browsers a:hover {
+  background-color: #F2F2F2;
+}
+.browser-blocker-wrapper .browsers a img {
+  display: block;
+  max-width: 100%;
+  border: none;
+}
+.browser-blocker-wrapper .modal .footer {
+  margin-top: 18px;
+  height: 30px;
+  clear: both;
+}
+.browser-blocker-wrapper .button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  line-height: 1.5;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 5px 15px 6px;
+  font-size: 14px;
+  border-radius: 2px;
+  -webkit-transition: color .2s linear, background-color .2s linear, border .2s linear, -webkit-box-shadow .2s linear;
+  transition: color .2s linear, background-color .2s linear, border .2s linear, -webkit-box-shadow .2s linear;
+  transition: color .2s linear, background-color .2s linear, border .2s linear, box-shadow .2s linear;
+  transition: color .2s linear, background-color .2s linear, border .2s linear, box-shadow .2s linear, -webkit-box-shadow .2s linear;
+  color: #666;
+  background-color: #ccc;
+  color: #fff;
+  border-color: #d9d9d9;
+}
+.browser-blocker-wrapper .button:hover {
+  color: #fff;
+  background-color: #bbb;
+}
+.browser-blocker-wrapper .backdrop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  _position: absolute;
+  _top: expression(eval(document.documentElement.scrollTop) +'px');
+  _left: expression(eval(document.documentElement.scrollLeft) +'px');
+  _right: auto;
+  _bottom: auto;
+  _width: expression(eval(document.documentElement.clientWidth) +'px');
+  _height: expression(eval(document.documentElement.clientHeight) +'px');
+  background: rgb(255, 255, 255);
+  z-index: 99998;
+}
